@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Printing Variables') {
       environment {
-        LocalVar = 'Local_Var1'
+        LocalVar = 'Local_Var1_4_Me'
       }
       steps {
         sh 'echo "SOME_VAR is $SOME_VAR"'
