@@ -8,12 +8,12 @@ pipeline {
         sh 'echo "OTHER_VAR is $OTHER_VAR"'
         sh 'echo $CRED1 > cred1.txt'
         sh 'echo $CRED2 > cred2.txt'
-        archiveArtifacts '**/*.txt'
         sh 'echo "FOO Credentials is : $FOO"'
         sh 'echo "FOO_USR is $FOO_USR" > FOO_USR.txt'
         sh 'echo "FOO_PSW is $FOO_PSW" > FOO_PSW.txt'
         sh 'echo $FOO_USR > FOO_USR.txt'
         sh 'echo $FOO_PSW > FOO_PSW.txt'
+        archiveArtifacts '**/*.txt'
       }
     }
 
