@@ -8,7 +8,7 @@ pipeline {
         sh 'echo "OTHER_VAR is $OTHER_VAR"'
         sh 'echo $CRED1 > cred1.txt'
         sh 'echo $CRED2 > cred2.txt'
-        archive '**/*.txt'
+        archiveArtifacts '**/*.txt'
       }
     }
 
