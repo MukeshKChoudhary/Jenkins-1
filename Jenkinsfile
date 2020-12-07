@@ -10,8 +10,8 @@ pipeline {
         sh 'echo $CRED2 > cred2.txt'
         archiveArtifacts '**/*.txt'
         sh 'echo "FOO Credentials is : $FOO"'
-        sh 'echo "FOO_USR is $FOO_USR"'
-        sh 'echo "FOO_PSW is $FOO_PSW"'
+        sh 'echo "FOO_USR is $FOO_USR" > FOO_USR.txt'
+        sh 'echo "FOO_PSW is $FOO_PSW" > FOO_PSW.txt'
       }
     }
 
