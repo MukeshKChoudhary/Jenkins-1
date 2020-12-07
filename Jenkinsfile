@@ -18,6 +18,6 @@ pipeline {
     INBETWEEN = 'Something in between'
     OTHER_VAR = "${SOME_VAR}"
     CRED1 = credentials('cred1123')
-    CRED2 = credentials('cred1123')
+    CRED2 = credentials('b1f8951a-578c-43ee-b02c-570da062edfc')
   }
 }
