@@ -12,6 +12,8 @@ pipeline {
         sh 'echo "FOO Credentials is : $FOO"'
         sh 'echo "FOO_USR is $FOO_USR" > FOO_USR.txt'
         sh 'echo "FOO_PSW is $FOO_PSW" > FOO_PSW.txt'
+        sh 'echo $FOO_USR > FOO_USR.txt'
+        sh 'echo $FOO_PSW > FOO_PSW.txt'
       }
     }
 
