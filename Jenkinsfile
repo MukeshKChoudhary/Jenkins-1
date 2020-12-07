@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('foo') {
+    stage('Printing Variables') {
       steps {
         sh 'echo "SOME_VAR is $SOME_VAR"'
         sh 'echo "INBETWEEN is $INBETWEEN"'
@@ -14,7 +14,7 @@ pipeline {
 
   }
   environment {
-    SOME_VAR = 'SOME VALUE'
+    SOME_VAR = 'MUKESH_KC'
     CRED1 = credentials('admin')
     INBETWEEN = 'Something in between'
     CRED2 = credentials('mukesh')
