@@ -71,7 +71,9 @@ pipeline {
           }
           steps {
             sh 'echo "Hello Sonar"'
-            #sh 'mvn sonar:sonar -Dsonar.login=$SONAR_PSW'
+            /*
+            sh 'mvn sonar:sonar -Dsonar.login=$SONAR_PSW'
+            */
           }
         }
       }
