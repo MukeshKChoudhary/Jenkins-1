@@ -15,9 +15,9 @@ pipeline {
   }
   environment {
     SOME_VAR = 'SOME VALUE'
-    CRED1 = credentials('cred1')
+    CRED1 = credentials('admin')
     INBETWEEN = 'Something in between'
-    CRED2 = credentials('cred2')
+    CRED2 = credentials('mukesh')
     OTHER_VAR = "${SOME_VAR}"
   }
 }
