@@ -17,5 +17,7 @@ pipeline {
     SOME_VAR = 'MUKESH_KC'
     INBETWEEN = 'Something in between'
     OTHER_VAR = "${SOME_VAR}"
+    CRED1 = credentials('cred1')
+    CRED2 = credentials('cred1')
   }
 }
