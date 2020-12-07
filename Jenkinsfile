@@ -2,6 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Printing Variables') {
+      environment {
+        LocalVar = 'Local_Var1'
+      }
       steps {
         sh 'echo "SOME_VAR is $SOME_VAR"'
         sh 'echo "INBETWEEN is $INBETWEEN"'
@@ -13,6 +16,7 @@ pipeline {
         sh 'echo "FOO_PSW is $FOO_PSW" > FOO_PSW.txt'
         sh 'echo $FOO_USR > FOO_USR.txt'
         sh 'echo $FOO_PSW > FOO_PSW.txt'
+        sh 'echo $LocalVar is the local variable'
         archiveArtifacts '**/*.txt'
       }
     }
